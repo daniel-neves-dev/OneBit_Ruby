@@ -1,5 +1,5 @@
 
-require "banck_account"
+require "banck_account_class"
 
 RSpec.describe BankAccount do
   account = BankAccount.new(100)

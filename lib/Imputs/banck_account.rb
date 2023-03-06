@@ -17,4 +17,6 @@ when 2
   puts "How much do you want to withdraw $:"
   withdraw = gets.chomp.to_f
   bankaccoun.withdraw(withdraw)
+else
+  puts "Invalid choice"
 end

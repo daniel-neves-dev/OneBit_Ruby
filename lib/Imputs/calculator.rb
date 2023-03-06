@@ -1,4 +1,6 @@
-require 'calculator'
+# frozen_string_literal: true
+
+require "calculator"
 
 calculation = Calculator.new
 

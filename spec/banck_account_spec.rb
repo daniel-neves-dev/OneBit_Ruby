@@ -1,13 +1,13 @@
 
-require "banck_account"
+require "banck_account_class"
 
 RSpec.describe BankAccount do
-  account = BankAccount.new(100)
+  account = BankAccount.new(100.00)
   it "deposit" do
-    expect(account.deposit(50)).to be(150)
+    expect(account.deposit(50)).to be(150.00)
   end
 
   it "withdraw" do
-    expect(account.withdraw(50)).to be(50)
+    expect(account.withdraw(50)).to be(50.00)
   end
 end

@@ -4,6 +4,9 @@ class BankAccount
     @amount = amount
   end
   def deposit(deposit)
-    deposit + initialize(amount)
+    deposit + amount
+  end
+  def withdraw(withdraw)
+    amount - withdraw
   end
 end

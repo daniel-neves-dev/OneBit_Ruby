@@ -6,4 +6,8 @@ RSpec.describe BankAccount do
   it "deposit" do
     expect(account.deposit(50)).to be(150)
   end
+
+  it "withdraw" do
+    expect(account.withdraw(50)).to be(50)
+  end
 end

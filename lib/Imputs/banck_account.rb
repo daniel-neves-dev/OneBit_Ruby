@@ -2,7 +2,7 @@
 
 require "banck_account_class"
 
-bankaccoun = BankAccount.new(1000.00)
+bankaccoun = Bank::Account.new(1000.00)
 puts "\nYou have a total of $#{bankaccoun.amount} dollars"
 
 puts "Type '1' for deposit. \nType '2' for withdraw."

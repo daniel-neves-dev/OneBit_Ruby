@@ -2,9 +2,9 @@
 
 require "banck_account_class"
 
-RSpec.describe BankAccount do
+RSpec.describe Bank::Account do
   context "Add money to the account" do
-    account = BankAccount.new(100.00)
+    account = Bank::Account.new(100.00)
     it "deposit" do
       account.deposit(50)
       expect(account.instance_variable_get(:@amount)).to eq(150.00)
@@ -12,7 +12,7 @@ RSpec.describe BankAccount do
   end
 
   context "Verify withdraw and balance" do
-    account = BankAccount.new(100.00)
+    account = Bank::Account.new(100.00)
     it "withdraw" do
       account.withdraw(50)
       expect(account.instance_variable_get(:@amount)).to eq(50.00)

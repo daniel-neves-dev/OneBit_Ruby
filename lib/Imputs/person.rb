@@ -5,6 +5,6 @@ first_name = gets.chomp
 puts "Enter your last name"
 last_name = gets.chomp
 
-person = EnterName.new(first_name, last_name)
+person = Resgister::EnterName.new(first_name, last_name)
 
 puts "Welcome #{person.first_name} #{person.last_name}"

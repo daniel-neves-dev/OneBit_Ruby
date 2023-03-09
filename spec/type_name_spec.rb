@@ -1,9 +1,9 @@
 
 require "type_name"
 
-RSpec.describe EnterName do
+RSpec.describe Resgister::EnterName do
   context "Type the first and the last name" do
-    person = EnterName.new("Daniel", "Oliveira")
+    person = Resgister::EnterName.new("Daniel", "Oliveira")
     it "first name" do
       expect(person.first_name).to eq("Daniel")
     end

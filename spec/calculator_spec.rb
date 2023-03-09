@@ -1,7 +1,7 @@
 require "calculator"
 
-RSpec.describe Calculator do
-  calculation = Calculator.new
+RSpec.describe Mathematics::Calculator do
+  calculation = Mathematics::Calculator.new
 
   context "Verify addition (+), subtraction (-), multiplication (X), division (/)" do
     it "#sum (+)" do

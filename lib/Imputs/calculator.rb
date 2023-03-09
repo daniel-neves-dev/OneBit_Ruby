@@ -2,11 +2,11 @@
 
 require "calculator"
 
-calculation = Calculator.new
+calculation = Mathematics::Calculator.new
 
-puts "Type the first integer number"
+puts "Type the first number"
 num1 = gets.chomp.to_f
-puts "Type the second integer number"
+puts "Type the second number"
 num2 = gets.chomp.to_f
 puts "Type \n+: for addition \n-: for subtraction \n*: for multiplication \n/: for division"
 operation = gets.chomp
